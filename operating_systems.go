@@ -247,6 +247,8 @@ func getPlatform(comment []string) string {
 				return "Symbian"
 			} else if strings.HasPrefix(comment[0], "webOS") {
 				return "webOS"
+			} else if strings.HasPrefix(comment[0], "X11") {
+				return "Linux"
 			} else if comment[0] == "BB10" {
 				return "BlackBerry"
 			}
